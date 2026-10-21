@@ -1,0 +1,27 @@
+{
+  "level_id": 29,
+  "phase": "intermediate",
+  "difficulty": 2.35,
+  "time_limit": 264,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 668.3, "y": 770.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 382.3, "y": 790.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 291.7, "y1": 536.1, "x2": 475.4, "y2": 719.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 771.0, "y1": 592.2, "x2": 588.2, "y2": 456.2, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": -20.0, "pivot_x": 679.6, "pivot_y": 524.2},
+    {"id": "mirror_3", "x1": 185.1, "y1": 482.4, "x2": 209.4, "y2": 761.5, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 703.5, "y1": 853.1, "x2": 612.2, "y2": 876.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 579.6, "y1": 989.4, "x2": 643.4, "y2": 1119.5, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 615.8, "y": 1441.8, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 28, "gems": 0, "xp": 24},
+  "hints": ["آینه‌ی چرخان: صبر کن زاویه‌اش درست شود، بعد شلیک کن."]
+}

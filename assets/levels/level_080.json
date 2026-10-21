@@ -1,0 +1,36 @@
+{
+  "level_id": 80,
+  "phase": "master",
+  "difficulty": 7.42,
+  "time_limit": 129,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 646.0, "y": 881.9, "hp": 1, "move_pattern": "linear_vertical", "speed": 100.0, "radius": 40.0},
+    {"id": "target_2", "x": 301.1, "y": 1250.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 387.3, "y": 1311.3, "hp": 1, "move_pattern": "circular", "speed": 150.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 448.9, "y1": 521.0, "x2": 585.4, "y2": 644.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 852.4, "y1": 621.4, "x2": 713.2, "y2": 460.1, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 318.1, "y1": 430.0, "x2": 333.2, "y2": 621.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 530.1, "y1": 829.5, "x2": 504.9, "y2": 665.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 910.9, "y1": 698.4, "x2": 888.7, "y2": 509.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 706.3, "y1": 902.1, "x2": 841.3, "y2": 801.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 356.6, "y1": 850.1, "x2": 265.2, "y2": 1020.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 859.3, "y1": 1074.9, "x2": 717.3, "y2": 1138.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 307.7, "y1": 769.1, "x2": 155.7, "y2": 799.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_10", "x1": 336.2, "y1": 647.7, "x2": 391.9, "y2": 732.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 619.8, "y1": 1145.3, "x2": 635.0, "y2": 1262.6, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 873.9, "y1": 1106.9, "x2": 877.6, "y2": 1259.1, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 844.5, "y": 1457.7, "radius": 30.0},
+    {"id": "prism_2", "x": 878.8, "y": 972.7, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 41, "gems": 1, "xp": 49},
+  "hints": ["منشور پرتو را به چند شاخه‌ی رنگی تقسیم می‌کند."]
+}

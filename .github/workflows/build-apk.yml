@@ -1,0 +1,232 @@
+name: Build Android APK
+
+# فاز۸ -- ساخت خودکار APK.
+#
+# ⚠️ این pipeline در محیط توسعه (sandbox بدون شبکه/SDK) هرگز اجرا نشده؛ تمام
+# بخش‌هایی که بدون اجرا قابل‌بررسی بودند (YAML، spec، همخوانی requirements،
+# فونت، سازگاری پایتون ۳.۱۱) با تست پوشش داده شده‌اند، ولی «اولین اجرای واقعی»
+# روی GitHub تنها تأیید قطعی بیلد است. اگر شکست خورد، آرتیفکت build-log-* را
+# دانلود کنید و لاگ را بدهید -- راهنمای عیب‌یابی در README (بخش «ساخت APK»).
+#
+# جریان: preflight (سریع، ~۲ دقیقه) -> build (کند، ۲۵ تا ۶۰ دقیقه) -> release (فقط روی tag).
+
+# فاز۱۰ (بازبینی): هم main (پیش‌فرض GitHub) و هم master (پیش‌فرض بعضی نسخه‌های قدیمی git)؛
+# قبلاً فقط main بود و اگر شاخه‌ی پیش‌فرض master می‌شد، هیچ بیلدی خودکار اجرا نمی‌شد.
+# workflow_dispatch: دکمه‌ی «Run workflow» در تب Actions (برای اجرای دستی روی هر شاخه).
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch: {}
+
+# اجرای قدیمی‌تر همان branch وقتی push جدید می‌آید لغو می‌شود (بیلد ۴۰ دقیقه‌ای را هدر نده).
+concurrency:
+  group: build-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # ------------------------------------------------------------------
+  # مرحله‌ی سریع: قبل از خرج‌کردن ۴۰ دقیقه بیلد، بررسی‌های ارزان. روی پایتون
+  # ۳.۱۱ اجرا می‌شود -- همان نسخه‌ی پایتونی که داخل APK است (p4a v2024.01.21)،
+  # پس سازگاری کد با ۳.۱۱ هم واقعاً اینجا آزموده می‌شود.
+  # ------------------------------------------------------------------
+  preflight:
+    name: Preflight (tests + build-config checks)
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Core logic tests
+        run: python tests/test_core.py
+
+      - name: Build / packaging tests
+        run: python tests/test_build.py
+
+      - name: UI smoke test (Kivy stub)
+        run: python tests/test_ui_smoke.py
+
+      - name: Phase 9 tests (level generator, 100 campaign levels, endless, daily challenge)
+        run: python tests/test_phase9.py
+
+      - name: Phase 10 tests (real audio, icons, HUD wrapping, hints, scene shake, economy)
+        run: python tests/test_phase10.py
+
+      - name: Preflight report
+        run: python tools/preflight.py
+
+  # ------------------------------------------------------------------
+  build:
+    name: Build APK (${{ matrix.profile }})
+    needs: preflight
+    # روی PR فقط preflight اجرا می‌شود (بیلد کامل پرهزینه است).
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    # پروفایل experimental اگر شکست بخورد، وضعیت کل workflow را قرمز نمی‌کند.
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # مبنا: نسخه‌های دقیقاً pin‌شده -- قابل‌تکرار؛ این پروفایل ملاک موفقیت است.
+          - profile: pinned
+            experimental: false
+            buildozer_spec: 'buildozer==1.5.0'
+            cython_spec: 'cython==0.29.36'
+          # پوشش در برابر ناشناخته‌ها: ابزار بیلد جدید + p4a master. چون محیط
+          # ابزار در زمان اجرا قابل‌پیش‌بینی نیست، این پروفایل موازی اجرا می‌شود؛
+          # اگر pinned شکست خورد و latest موفق شد، بدانیم مشکل از pin‌هاست.
+          - profile: latest
+            experimental: true
+            buildozer_spec: 'buildozer'
+            cython_spec: 'cython==3.0.11'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # JDK صریح (به‌جای تکیه بر apt): JAVA_HOME و PATH قطعی، سازگار با Gradle 7.x
+      # و sdkmanager که p4a/buildozer استفاده می‌کنند.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            git zip unzip python3-pip autoconf automake libtool pkg-config \
+            zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake \
+            libffi-dev libssl-dev build-essential ccache
+
+      - name: Install buildozer + Cython
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "${{ matrix.buildozer_spec }}" "${{ matrix.cython_spec }}"
+          buildozer --version
+
+      - name: Apply experimental profile tweaks
+        if: matrix.profile == 'latest'
+        run: |
+          sed -i 's/^p4a.branch = .*/p4a.branch = master/' buildozer.spec
+          sed -i 's/kivy==2.3.0/kivy/' buildozer.spec
+          grep -E '^(p4a.branch|requirements)' buildozer.spec
+
+      # کش: SDK/NDK (~۳ گیگ) و خروجی بیلد p4a را بین اجراها نگه می‌دارد.
+      - name: Restore build cache
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ~/.buildozer
+            .buildozer
+          key: buildozer-${{ matrix.profile }}-${{ hashFiles('buildozer.spec') }}
+          restore-keys: |
+            buildozer-${{ matrix.profile }}-
+
+      - name: Build debug APK
+        shell: bash   # bash -eo pipefail: شکست buildozer از زیر tee رد نمی‌شود
+        run: buildozer -v android debug 2>&1 | tee build-${{ matrix.profile }}.log
+
+      # --- بعد از این‌جا فقط وقتی بیلد موفق بوده ---
+      # اطلاعاتی، نه مسدودکننده: مسیر .buildozer/android/app فرض ماست (قابل‌تأیید
+      # فقط روی CI)؛ اگر فرض غلط باشد نباید APKِ سالم از دست برود. قوانین include/exclude
+      # قبلاً در preflight با شبیه‌سازی تست شده‌اند؛ این مرحله شبیه‌سازی را با رفتار
+      # واقعی buildozer تطبیق می‌دهد.
+      - name: Cross-check what buildozer actually bundled (informational)
+        continue-on-error: true
+        run: python tools/preflight.py --bundle .buildozer/android/app
+
+      - name: APK info
+        shell: bash
+        run: |
+          mkdir -p out
+          APK="$(ls bin/*.apk | head -n1)"
+          cp "$APK" "out/LaserRicochet-${{ matrix.profile }}-debug.apk"
+          SIZE="$(du -h "$APK" | cut -f1)"
+          SHA="$(sha256sum "$APK" | cut -d' ' -f1)"
+          AAPT="$(ls ~/.buildozer/android/platform/android-sdk/build-tools/*/aapt 2>/dev/null | sort -V | tail -n1 || true)"
+          if [ -n "$AAPT" ]; then
+            "$AAPT" dump badging "$APK" | grep -E "^(package|sdkVersion|targetSdkVersion|uses-permission|launchable-activity)" | tee aapt-badging-${{ matrix.profile }}.txt
+          fi
+          {
+            echo "### Laser Ricochet APK -- ${{ matrix.profile }}"
+            echo "- file: \`$(basename "$APK")\`"
+            echo "- size: ${SIZE}"
+            echo "- sha256: \`${SHA}\`"
+            echo "- نصب: APK را روی گوشی اندروید (arm64) بریزید و «نصب از منبع ناشناس» را مجاز کنید."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: laser-ricochet-debug-apk-${{ matrix.profile }}
+          path: out/LaserRicochet-${{ matrix.profile }}-debug.apk
+          if-no-files-found: error
+
+      # --- همیشه: لاگ برای عیب‌یابی + ذخیره‌ی کش حتی اگر بیلد وسط‌کار شکست خورد ---
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log-${{ matrix.profile }}
+          path: |
+            build-${{ matrix.profile }}.log
+            aapt-badging-${{ matrix.profile }}.txt
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Save build cache (complete)
+        if: success() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.buildozer
+            .buildozer
+          key: buildozer-${{ matrix.profile }}-${{ hashFiles('buildozer.spec') }}
+
+      # اگر بیلد شکست خورد، فقط دانلودهای سنگین SDK/NDK (~/.buildozer) را نگه دار --
+      # نه خروجی نیمه‌کاره‌ی p4a را (ممکن است ناسازگار باشد). تلاش بعدی دانلودهای سنگین را از نو انجام نمی‌دهد.
+      - name: Save build cache (SDK/NDK only, after failure)
+        if: failure() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.buildozer
+          key: buildozer-${{ matrix.profile }}-${{ hashFiles('buildozer.spec') }}-sdk
+
+  # ------------------------------------------------------------------
+  # فقط روی tag مثل v0.1.0: APK پایدار (pinned) را به یک GitHub Release وصل می‌کند --
+  # لینک دانلود عمومی، بدون نیاز به ورود به GitHub.
+  # ------------------------------------------------------------------
+  release:
+    name: Publish GitHub Release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: laser-ricochet-debug-apk-pinned
+          merge-multiple: true
+          path: dist
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.apk
+          generate_release_notes: true

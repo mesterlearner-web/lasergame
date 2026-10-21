@@ -1,0 +1,25 @@
+{
+  "level_id": 21,
+  "phase": "intermediate",
+  "difficulty": 1.82,
+  "time_limit": 278,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 280.5, "y": 1003.4, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 880.6, "y": 649.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 456.8, "y1": 430.0, "x2": 487.2, "y2": 566.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 639.7, "y1": 892.7, "x2": 688.1, "y2": 607.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 592.4, "y1": 444.2, "x2": 751.2, "y2": 627.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 212.6, "y1": 1205.3, "x2": 275.5, "y2": 1384.8, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 424.4, "y1": 1077.5, "x2": 375.9, "y2": 1226.3, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 26, "gems": 0, "xp": 20},
+  "hints": ["2 هدف داری؛ برای هر کدام یک مسیر کمانه بساز."]
+}

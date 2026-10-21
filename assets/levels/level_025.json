@@ -1,0 +1,23 @@
+{
+  "level_id": 25,
+  "phase": "intermediate",
+  "difficulty": 2.07,
+  "time_limit": 271,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 530.3, "y": 576.0, "hp": 1, "move_pattern": "linear_horizontal", "speed": 100.0, "radius": 40.0},
+    {"id": "target_2", "x": 594.8, "y": 740.3, "hp": 1, "move_pattern": "linear_horizontal", "speed": 100.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 882.4, "y1": 688.0, "x2": 897.0, "y2": 446.5, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 373.3, "y1": 827.4, "x2": 265.0, "y2": 864.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 650.9, "y1": 932.8, "x2": 688.8, "y2": 1181.1, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 27, "gems": 0, "xp": 22},
+  "hints": ["آینه‌ی نیمه‌شفاف پرتو را دو شاخه می‌کند: بخشی بازتاب می‌شود و بخشی عبور می‌کند."]
+}

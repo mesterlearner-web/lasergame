@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.buildozer/
+bin/
+out/
+.venv/
+*.egg-info/
+*.apk
+*.aab
+*.log
+.idea/
+.vscode/
+.DS_Store
+.pytest_cache/
+# فایل ذخیره‌ی محلیِ اجرای دسکتاپ (روی اندروید در user_data_dir است، نه اینجا)
+data/save.db*

@@ -1,0 +1,32 @@
+{
+  "level_id": 69,
+  "phase": "expert",
+  "difficulty": 6.12,
+  "time_limit": 163,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 485.0, "y": 848.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 406.2, "y": 1231.5, "hp": 1, "move_pattern": "linear_vertical", "speed": 100.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 346.5, "y1": 616.6, "x2": 526.3, "y2": 494.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 229.6, "y1": 430.0, "x2": 132.8, "y2": 625.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 838.8, "y1": 687.4, "x2": 806.5, "y2": 464.4, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 614.5, "y1": 1055.1, "x2": 748.0, "y2": 915.8, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 411.4, "y1": 1009.5, "x2": 302.1, "y2": 1217.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 262.8, "y1": 1370.1, "x2": 349.0, "y2": 1527.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 508.8, "y1": 1218.9, "x2": 491.0, "y2": 1324.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 660.4, "y1": 642.5, "x2": 566.0, "y2": 762.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 445.5, "y1": 767.9, "x2": 568.6, "y2": 794.3, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 721.6, "y1": 786.7, "x2": 538.8, "y2": 895.0, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [
+    {"id": "blackhole_1", "x": 873.5, "y": 1346.9, "radius": 50.0, "emit_x": 317.6, "emit_y": 1190.2}
+  ],
+  "rewards": {"coins": 38, "gems": 0, "xp": 44},
+  "hints": ["سیاه‌چاله پرتو را می‌بلعد و از جای دیگر با زاویه‌ی تصادفی بیرون می‌دهد؛ از آن دوری کن."]
+}

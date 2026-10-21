@@ -1,0 +1,29 @@
+{
+  "level_id": 51,
+  "phase": "expert",
+  "difficulty": 4.23,
+  "time_limit": 214,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 377.4, "y": 1276.4, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 616.0, "y": 947.4, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 261.1, "y1": 430.0, "x2": 325.2, "y2": 570.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 782.0, "y1": 620.0, "x2": 713.9, "y2": 430.0, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": -20.0, "pivot_x": 747.9, "pivot_y": 525.0},
+    {"id": "mirror_3", "x1": 479.3, "y1": 716.2, "x2": 374.2, "y2": 924.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 298.4, "y1": 578.2, "x2": 390.5, "y2": 752.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 777.7, "y1": 855.6, "x2": 684.5, "y2": 643.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 315.5, "y1": 694.1, "x2": 193.6, "y2": 714.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 709.6, "y1": 998.4, "x2": 811.7, "y2": 1073.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 178.6, "y1": 1070.4, "x2": 307.0, "y2": 1142.4, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 665.9, "y1": 985.0, "x2": 522.0, "y2": 1172.6, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 34, "gems": 0, "xp": 35},
+  "hints": ["آینه‌ی چرخان: صبر کن زاویه‌اش درست شود، بعد شلیک کن."]
+}

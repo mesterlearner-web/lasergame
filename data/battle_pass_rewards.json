@@ -1,0 +1,471 @@
+[
+  {
+    "level": 1,
+    "free": {
+      "coins": 65
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 2,
+    "free": {
+      "coins": 80
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 3,
+    "free": {
+      "coins": 95
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 4,
+    "free": {
+      "coins": 110
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 5,
+    "free": {
+      "coins": 125,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 6,
+    "free": {
+      "coins": 140
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 7,
+    "free": {
+      "coins": 155
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 8,
+    "free": {
+      "coins": 170
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 9,
+    "free": {
+      "coins": 185
+    },
+    "premium": {
+      "gems": 5
+    }
+  },
+  {
+    "level": 10,
+    "free": {
+      "coins": 200,
+      "gems": 1,
+      "special_items": [
+        "skin_azure_beam"
+      ]
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 11,
+    "free": {
+      "coins": 215
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 12,
+    "free": {
+      "coins": 230
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 13,
+    "free": {
+      "coins": 245
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 14,
+    "free": {
+      "coins": 260
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 15,
+    "free": {
+      "coins": 275,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 16,
+    "free": {
+      "coins": 290
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 17,
+    "free": {
+      "coins": 305
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 18,
+    "free": {
+      "coins": 320
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 19,
+    "free": {
+      "coins": 335
+    },
+    "premium": {
+      "gems": 6
+    }
+  },
+  {
+    "level": 20,
+    "free": {
+      "coins": 350,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 21,
+    "free": {
+      "coins": 365
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 22,
+    "free": {
+      "coins": 380
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 23,
+    "free": {
+      "coins": 395
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 24,
+    "free": {
+      "coins": 410
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 25,
+    "free": {
+      "coins": 425,
+      "gems": 1,
+      "special_items": [
+        "gun_prism_blaster"
+      ]
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 26,
+    "free": {
+      "coins": 440
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 27,
+    "free": {
+      "coins": 455
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 28,
+    "free": {
+      "coins": 470
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 29,
+    "free": {
+      "coins": 485
+    },
+    "premium": {
+      "gems": 7
+    }
+  },
+  {
+    "level": 30,
+    "free": {
+      "coins": 500,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 31,
+    "free": {
+      "coins": 515
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 32,
+    "free": {
+      "coins": 530
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 33,
+    "free": {
+      "coins": 545
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 34,
+    "free": {
+      "coins": 560
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 35,
+    "free": {
+      "coins": 575,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 36,
+    "free": {
+      "coins": 590
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 37,
+    "free": {
+      "coins": 605
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 38,
+    "free": {
+      "coins": 620
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 39,
+    "free": {
+      "coins": 635
+    },
+    "premium": {
+      "gems": 8
+    }
+  },
+  {
+    "level": 40,
+    "free": {
+      "coins": 650,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 41,
+    "free": {
+      "coins": 665
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 42,
+    "free": {
+      "coins": 680
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 43,
+    "free": {
+      "coins": 695
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 44,
+    "free": {
+      "coins": 710
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 45,
+    "free": {
+      "coins": 725,
+      "gems": 1,
+      "special_items": [
+        "skin_golden_ricochet"
+      ]
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 46,
+    "free": {
+      "coins": 740
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 47,
+    "free": {
+      "coins": 755
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 48,
+    "free": {
+      "coins": 770
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 49,
+    "free": {
+      "coins": 785
+    },
+    "premium": {
+      "gems": 9
+    }
+  },
+  {
+    "level": 50,
+    "free": {
+      "coins": 800,
+      "gems": 1
+    },
+    "premium": {
+      "gems": 10
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "level_id": 4,
+  "phase": "training",
+  "difficulty": 1.05,
+  "time_limit": 280,
+  "laser_start": {"x": 540, "y": 180, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 540, "y": 1400, "hp": 1, "move_pattern": "static", "speed": 0, "radius": 40}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 931.3, "y1": 585.3, "x2": 945.8, "y2": 724.6, "type": "normal", "reflectivity": 1.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 300, "y1": 550, "x2": 780, "y2": 570, "destructible": false}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 20, "gems": 0, "xp": 11},
+  "hints": ["شلیک مستقیم به مانع می‌خوره -- از کنارش رد شو و با آینه‌ی سمت راست برگردون سمت هدف"]
+}

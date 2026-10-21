@@ -1,0 +1,32 @@
+{
+  "level_id": 75,
+  "phase": "expert",
+  "difficulty": 6.82,
+  "time_limit": 145,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 834.9, "y": 851.7, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 587.5, "y": 811.7, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 521.5, "y": 1355.0, "hp": 1, "move_pattern": "linear_horizontal", "speed": 100.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 898.2, "y1": 561.2, "x2": 894.9, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 651.5, "y1": 627.8, "x2": 667.2, "y2": 826.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 587.8, "y1": 635.0, "x2": 641.2, "y2": 437.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 338.0, "y1": 727.1, "x2": 405.5, "y2": 884.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 248.5, "y1": 487.7, "x2": 190.9, "y2": 673.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 208.4, "y1": 1002.2, "x2": 306.1, "y2": 1178.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 795.7, "y1": 1524.9, "x2": 886.3, "y2": 1537.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 678.9, "y1": 936.8, "x2": 789.6, "y2": 1002.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 376.6, "y1": 1061.8, "x2": 389.8, "y2": 1150.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 872.6, "y1": 1214.3, "x2": 792.5, "y2": 1347.4, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 601.9, "y1": 1431.2, "x2": 728.0, "y2": 1532.3, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 40, "gems": 0, "xp": 47},
+  "hints": ["3 هدف داری؛ برای هر کدام یک مسیر کمانه بساز."]
+}

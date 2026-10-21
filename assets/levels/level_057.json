@@ -1,0 +1,33 @@
+{
+  "level_id": 57,
+  "phase": "expert",
+  "difficulty": 4.83,
+  "time_limit": 198,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 187.8, "y": 700.5, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 315.7, "y": 1498.6, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 551.4, "y": 1099.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 680.8, "y1": 678.2, "x2": 772.9, "y2": 495.0, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": 25.0, "pivot_x": 726.9, "pivot_y": 586.6},
+    {"id": "mirror_2", "x1": 310.2, "y1": 430.0, "x2": 314.8, "y2": 608.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 504.1, "y1": 914.2, "x2": 538.4, "y2": 682.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 302.9, "y1": 882.4, "x2": 205.8, "y2": 1107.5, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 436.2, "y1": 430.0, "x2": 470.5, "y2": 594.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 750.2, "y1": 992.4, "x2": 762.3, "y2": 802.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 500.8, "y1": 1382.0, "x2": 398.0, "y2": 1441.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 499.4, "y1": 457.2, "x2": 554.5, "y2": 585.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 722.7, "y1": 1270.3, "x2": 778.6, "y2": 1387.7, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 753.1, "y1": 1139.6, "x2": 677.1, "y2": 1307.4, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 560.9, "y": 897.8, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 35, "gems": 0, "xp": 38},
+  "hints": ["آینه‌ی شکسته بازتاب را کمی پراکنده می‌کند؛ روی آن حساب نکن."]
+}

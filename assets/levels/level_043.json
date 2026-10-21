@@ -1,0 +1,31 @@
+{
+  "level_id": 43,
+  "phase": "advanced",
+  "difficulty": 3.49,
+  "time_limit": 234,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 893.8, "y": 511.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 534.4, "y": 1435.8, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 553.3, "y1": 565.5, "x2": 681.8, "y2": 730.9, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": -25.0, "pivot_x": 617.5, "pivot_y": 648.2},
+    {"id": "mirror_2", "x1": 810.6, "y1": 819.3, "x2": 970.0, "y2": 716.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 294.8, "y1": 530.1, "x2": 332.9, "y2": 752.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 603.3, "y1": 983.1, "x2": 530.9, "y2": 795.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 647.9, "y1": 923.2, "x2": 845.5, "y2": 944.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 466.8, "y1": 1407.5, "x2": 482.0, "y2": 1510.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 133.7, "y1": 846.1, "x2": 285.0, "y2": 950.2, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 127.4, "y1": 1198.5, "x2": 279.4, "y2": 1336.0, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 180.8, "y1": 1414.2, "x2": 414.6, "y2": 1561.3, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 818.4, "y": 1507.8, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 32, "gems": 0, "xp": 31},
+  "hints": ["آینه‌ی شکسته بازتاب را کمی پراکنده می‌کند؛ روی آن حساب نکن."]
+}

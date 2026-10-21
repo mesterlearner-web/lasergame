@@ -1,0 +1,92 @@
+[
+  {
+    "id": "shot_piercing",
+    "category": "special_shots",
+    "name_fa": "شلیک نافذ",
+    "description_fa": "از موانع عبور می‌کند به‌جای متوقف‌شدن.",
+    "cost_coins": 0,
+    "cost_gems": 30,
+    "extra": {}
+  },
+  {
+    "id": "shot_splitting",
+    "category": "special_shots",
+    "name_fa": "شلیک شکافنده",
+    "description_fa": "در هر برخورد با آینه یک پرتوی دوم هم تولید می‌کند.",
+    "cost_coins": 0,
+    "cost_gems": 45,
+    "extra": {}
+  },
+  {
+    "id": "gun_rapid",
+    "category": "guns",
+    "name_fa": "اسلحه‌ی تندشلیک",
+    "description_fa": "سرعت شلیک را ۲۵٪ افزایش می‌دهد.",
+    "cost_coins": 1000,
+    "cost_gems": 0,
+    "extra": {
+      "bonus": {
+        "fire_rate_multiplier": 1.25
+      }
+    }
+  },
+  {
+    "id": "gun_precision",
+    "category": "guns",
+    "name_fa": "اسلحه‌ی دقیق",
+    "description_fa": "امتیاز کسب‌شده در هر مرحله را ۳۰٪ افزایش می‌دهد.",
+    "cost_coins": 1600,
+    "cost_gems": 0,
+    "extra": {
+      "bonus": {
+        "score_multiplier": 1.3
+      }
+    }
+  },
+  {
+    "id": "helper_remove_obstacle",
+    "category": "helpers",
+    "name_fa": "حذف یک مانع",
+    "description_fa": "یک مانع دلخواه را از مرحله‌ی فعلی حذف می‌کند.",
+    "cost_coins": 300,
+    "cost_gems": 0,
+    "extra": {
+      "helper_action": "remove_obstacle"
+    }
+  },
+  {
+    "id": "helper_skip_level",
+    "category": "helpers",
+    "name_fa": "رد شدن از مرحله",
+    "description_fa": "مرحله‌ی فعلی را بدون شلیک، برنده اعلام می‌کند.",
+    "cost_coins": 0,
+    "cost_gems": 20,
+    "extra": {
+      "helper_action": "skip_level"
+    }
+  },
+  {
+    "id": "upgrade_regen_speed",
+    "category": "upgrades",
+    "name_fa": "ارتقاء سرعت بازآفرینی انرژی",
+    "description_fa": "انرژی ۲۰٪ سریع‌تر بازآفرینی می‌شود (دائمی).",
+    "cost_coins": 0,
+    "cost_gems": 60,
+    "extra": {
+      "upgrade_type": "regen_speed",
+      "value": 0.8
+    }
+  },
+  {
+    "id": "upgrade_coin_bonus",
+    "category": "upgrades",
+    "name_fa": "ارتقاء پاداش سکه",
+    "description_fa": "سکه‌ی کسب‌شده از هر مرحله ۲۰٪ بیشتر می‌شود (دائمی).",
+    "cost_coins": 0,
+    "cost_gems": 60,
+    "extra": {
+      "upgrade_type": "coin_bonus",
+      "value": 1.2
+    }
+  }
+]

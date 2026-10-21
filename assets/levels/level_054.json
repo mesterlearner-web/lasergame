@@ -1,0 +1,29 @@
+{
+  "level_id": 54,
+  "phase": "expert",
+  "difficulty": 4.53,
+  "time_limit": 206,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 393.7, "y": 1347.1, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 590.9, "y": 1098.5, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 850.6, "y1": 1413.2, "x2": 955.6, "y2": 1206.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 855.8, "y1": 587.2, "x2": 885.6, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 530.8, "y1": 578.5, "x2": 435.0, "y2": 773.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 388.6, "y1": 1408.7, "x2": 556.5, "y2": 1458.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 472.5, "y1": 799.6, "x2": 382.0, "y2": 906.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 144.4, "y1": 1103.0, "x2": 255.1, "y2": 1254.2, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 393.8, "y1": 635.3, "x2": 416.2, "y2": 757.8, "destructible": false, "hp": 999}
+  ],
+  "portals": [
+    {"id": "portal_1", "x": 275.0, "y": 653.4, "radius": 35.0, "exit_x": 718.0, "exit_y": 1013.6, "exit_angle": 58.0}
+  ],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 34, "gems": 0, "xp": 36},
+  "hints": ["پورتال: پرتو از یک نقطه وارد می‌شود و از نقطه‌ی دیگر با زاویه‌ی ثابت بیرون می‌آید."]
+}

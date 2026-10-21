@@ -1,0 +1,30 @@
+{
+  "level_id": 37,
+  "phase": "advanced",
+  "difficulty": 2.97,
+  "time_limit": 247,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 840.0, "y": 1274.5, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 173.2, "y": 843.4, "hp": 1, "move_pattern": "linear_vertical", "speed": 100.0, "radius": 40.0},
+    {"id": "target_3", "x": 548.4, "y": 750.9, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 921.9, "y1": 590.4, "x2": 856.3, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 799.6, "y1": 996.2, "x2": 948.2, "y2": 855.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 597.4, "y1": 818.1, "x2": 498.9, "y2": 1022.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 239.0, "y1": 430.0, "x2": 196.9, "y2": 580.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 263.0, "y1": 870.9, "x2": 296.6, "y2": 656.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 284.4, "y1": 498.9, "x2": 342.7, "y2": 713.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 612.0, "y1": 1494.4, "x2": 743.2, "y2": 1577.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 230.8, "y1": 1287.0, "x2": 152.7, "y2": 1392.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 449.2, "y1": 847.6, "x2": 426.2, "y2": 962.4, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 30, "gems": 0, "xp": 28},
+  "hints": ["3 هدف داری؛ برای هر کدام یک مسیر کمانه بساز."]
+}

@@ -1,0 +1,42 @@
+{
+  "level_id": 95,
+  "phase": "master",
+  "difficulty": 9.33,
+  "time_limit": 78,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 606.3, "y": 960.3, "hp": 1, "move_pattern": "zigzag", "speed": 120.0, "radius": 40.0},
+    {"id": "target_2", "x": 248.6, "y": 1094.5, "hp": 1, "move_pattern": "zigzag", "speed": 120.0, "radius": 40.0},
+    {"id": "target_3", "x": 174.5, "y": 1008.6, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 761.2, "y1": 556.8, "x2": 805.4, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 553.0, "y1": 493.1, "x2": 424.7, "y2": 638.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 387.9, "y1": 895.3, "x2": 497.4, "y2": 1019.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 401.1, "y1": 620.5, "x2": 539.4, "y2": 475.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 222.0, "y1": 531.8, "x2": 132.6, "y2": 705.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 587.3, "y1": 579.4, "x2": 700.6, "y2": 719.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 938.4, "y1": 844.3, "x2": 835.6, "y2": 674.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 799.4, "y1": 1372.4, "x2": 914.5, "y2": 1214.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 299.2, "y1": 1435.1, "x2": 487.6, "y2": 1510.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_10", "x1": 543.0, "y1": 1213.7, "x2": 526.5, "y2": 1332.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_11", "x1": 653.4, "y1": 1114.0, "x2": 606.5, "y2": 1221.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_12", "x1": 613.4, "y1": 731.6, "x2": 538.5, "y2": 834.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_13", "x1": 303.4, "y1": 685.6, "x2": 430.5, "y2": 806.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_14", "x1": 653.7, "y1": 1398.9, "x2": 770.0, "y2": 1445.7, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_15", "x1": 458.3, "y1": 1181.8, "x2": 414.1, "y2": 1299.9, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 685.4, "y1": 1440.9, "x2": 487.4, "y2": 1608.3, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 286.2, "y1": 708.1, "x2": 339.2, "y2": 916.5, "destructible": false, "hp": 999},
+    {"id": "obstacle_3", "x1": 629.9, "y1": 784.1, "x2": 766.2, "y2": 881.1, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 866.1, "y": 560.4, "radius": 30.0},
+    {"id": "prism_2", "x": 215.2, "y": 1497.5, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 44, "gems": 0, "xp": 57},
+  "hints": ["آینه‌ی شکسته بازتاب را کمی پراکنده می‌کند؛ روی آن حساب نکن."]
+}

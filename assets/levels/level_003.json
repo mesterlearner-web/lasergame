@@ -1,0 +1,20 @@
+{
+  "level_id": 3,
+  "phase": "training",
+  "difficulty": 1.03,
+  "time_limit": 290,
+  "laser_start": {"x": 540, "y": 180, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 800, "y": 1400, "hp": 1, "move_pattern": "static", "speed": 0, "radius": 40}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 490, "y1": 600, "x2": 590, "y2": 700, "type": "normal", "reflectivity": 1.0},
+    {"id": "mirror_2", "x1": 750, "y1": 600, "x2": 850, "y2": 700, "type": "normal", "reflectivity": 1.0}
+  ],
+  "obstacles": [],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 18, "gems": 0, "xp": 10},
+  "hints": ["این‌بار یک آینه کافی نیست -- پرتو باید از دو آینه پشت‌سرهم کمانه کنه تا به هدف برسه"]
+}

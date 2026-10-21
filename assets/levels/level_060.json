@@ -1,0 +1,33 @@
+{
+  "level_id": 60,
+  "phase": "expert",
+  "difficulty": 5.14,
+  "time_limit": 190,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 472.9, "y": 1042.7, "hp": 1, "move_pattern": "zigzag", "speed": 120.0, "radius": 40.0},
+    {"id": "target_2", "x": 466.7, "y": 597.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 431.4, "y": 690.7, "hp": 1, "move_pattern": "linear_horizontal", "speed": 100.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 827.4, "y1": 679.1, "x2": 855.7, "y2": 491.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 481.8, "y1": 742.8, "x2": 443.9, "y2": 981.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 188.0, "y1": 430.0, "x2": 226.4, "y2": 592.6, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": -20.0, "pivot_x": 207.2, "pivot_y": 511.3},
+    {"id": "mirror_4", "x1": 660.4, "y1": 629.8, "x2": 698.7, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 249.0, "y1": 774.5, "x2": 238.0, "y2": 873.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 421.8, "y1": 1350.7, "x2": 334.9, "y2": 1404.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 505.2, "y1": 1126.3, "x2": 384.7, "y2": 1176.6, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 955.4, "y1": 1457.2, "x2": 819.8, "y2": 1569.9, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 520.4, "y": 518.6, "radius": 30.0}
+  ],
+  "black_holes": [
+    {"id": "blackhole_1", "x": 615.2, "y": 1476.6, "radius": 50.0, "emit_x": 608.2, "emit_y": 602.6}
+  ],
+  "rewards": {"coins": 36, "gems": 1, "xp": 39},
+  "hints": ["سیاه‌چاله پرتو را می‌بلعد و از جای دیگر با زاویه‌ی تصادفی بیرون می‌دهد؛ از آن دوری کن."]
+}

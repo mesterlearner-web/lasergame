@@ -1,0 +1,27 @@
+{
+  "level_id": 20,
+  "phase": "intermediate",
+  "difficulty": 1.76,
+  "time_limit": 280,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 561.0, "y": 610.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 626.4, "y": 510.9, "hp": 1, "move_pattern": "linear_horizontal", "speed": 100.0, "radius": 40.0},
+    {"id": "target_3", "x": 207.6, "y": 1274.7, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 332.5, "y1": 554.5, "x2": 412.3, "y2": 787.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 514.1, "y1": 897.7, "x2": 767.4, "y2": 797.8, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 225.9, "y1": 430.0, "x2": 189.5, "y2": 579.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 347.7, "y1": 1078.7, "x2": 361.1, "y2": 817.9, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": -25.0, "pivot_x": 354.4, "pivot_y": 948.3},
+    {"id": "mirror_5", "x1": 128.6, "y1": 1308.2, "x2": 260.7, "y2": 1446.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 596.1, "y1": 1012.9, "x2": 654.3, "y2": 1174.4, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 26, "gems": 1, "xp": 19},
+  "hints": ["آینه‌ی چرخان: صبر کن زاویه‌اش درست شود، بعد شلیک کن."]
+}

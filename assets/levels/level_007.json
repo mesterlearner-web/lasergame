@@ -1,0 +1,21 @@
+{
+  "level_id": 7,
+  "phase": "training",
+  "difficulty": 1.13,
+  "time_limit": 296,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 561.4, "y": 494.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 235.9, "y1": 470.5, "x2": 293.7, "y2": 683.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 485.3, "y1": 822.2, "x2": 718.1, "y2": 644.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 752.2, "y1": 781.4, "x2": 889.3, "y2": 785.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 22, "gems": 0, "xp": 13},
+  "hints": ["1 هدف داری؛ برای هر کدام یک مسیر کمانه بساز."]
+}

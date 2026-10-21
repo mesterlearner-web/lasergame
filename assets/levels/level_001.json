@@ -1,0 +1,17 @@
+{
+  "level_id": 1,
+  "phase": "training",
+  "difficulty": 1.0,
+  "time_limit": 300,
+  "laser_start": {"x": 540, "y": 180, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 540, "y": 1000, "hp": 1, "move_pattern": "static", "speed": 0, "radius": 40}
+  ],
+  "mirrors": [],
+  "obstacles": [],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 10, "gems": 0, "xp": 5},
+  "hints": ["مستقیم به سمت هدف شلیک کن -- هنوز به آینه نیازی نیست"]
+}

@@ -1,0 +1,32 @@
+{
+  "level_id": 38,
+  "phase": "advanced",
+  "difficulty": 3.06,
+  "time_limit": 245,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 605.0, "y": 1161.8, "hp": 1, "move_pattern": "zigzag", "speed": 120.0, "radius": 40.0},
+    {"id": "target_2", "x": 687.5, "y": 1256.8, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 550.8, "y1": 642.4, "x2": 777.7, "y2": 782.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 970.0, "y1": 722.3, "x2": 847.9, "y2": 585.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 224.5, "y1": 430.0, "x2": 229.0, "y2": 628.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 530.7, "y1": 976.2, "x2": 545.8, "y2": 717.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 150.6, "y1": 1020.8, "x2": 203.8, "y2": 1254.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 257.7, "y1": 1227.2, "x2": 372.7, "y2": 1275.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 239.5, "y1": 1298.1, "x2": 342.7, "y2": 1391.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 294.4, "y1": 569.3, "x2": 531.8, "y2": 691.3, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 472.5, "y": 1529.5, "radius": 30.0}
+  ],
+  "black_holes": [
+    {"id": "blackhole_1", "x": 425.1, "y": 1334.1, "radius": 50.0, "emit_x": 663.0, "emit_y": 1302.3}
+  ],
+  "rewards": {"coins": 30, "gems": 0, "xp": 28},
+  "hints": ["سیاه‌چاله پرتو را می‌بلعد و از جای دیگر با زاویه‌ی تصادفی بیرون می‌دهد؛ از آن دوری کن."]
+}

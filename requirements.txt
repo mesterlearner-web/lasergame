@@ -1,0 +1,6 @@
+# وابستگی‌های اجرای محلی (دسکتاپ). نسخه‌ی اندروید در buildozer.spec (requirements=) است
+# و باید با این pin‌ها یکی بماند -- tests/test_build.py همخوانی‌شان را چک می‌کند.
+kivy==2.3.0
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+six

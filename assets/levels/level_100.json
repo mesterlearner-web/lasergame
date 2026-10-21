@@ -1,0 +1,49 @@
+{
+  "level_id": 100,
+  "phase": "master",
+  "difficulty": 10.0,
+  "time_limit": 60,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 176.0, "y": 1518.9, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 185.0, "y": 1367.6, "hp": 1, "move_pattern": "zigzag", "speed": 120.0, "radius": 40.0},
+    {"id": "target_3", "x": 475.7, "y": 545.1, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 746.8, "y1": 622.7, "x2": 803.1, "y2": 439.8, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 308.8, "y1": 632.3, "x2": 273.3, "y2": 820.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 674.2, "y1": 1170.6, "x2": 645.5, "y2": 978.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 319.1, "y1": 1575.4, "x2": 478.6, "y2": 1489.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 227.1, "y1": 445.8, "x2": 179.7, "y2": 594.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 217.9, "y1": 805.2, "x2": 302.3, "y2": 921.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 532.4, "y1": 1054.3, "x2": 444.7, "y2": 907.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 436.6, "y1": 1328.6, "x2": 529.6, "y2": 1152.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 916.9, "y1": 553.6, "x2": 879.4, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_10", "x1": 698.8, "y1": 953.0, "x2": 874.0, "y2": 857.2, "type": "rotating_mirror", "reflectivity": 1.0, "rotation_speed": 25.0, "pivot_x": 786.4, "pivot_y": 905.1},
+    {"id": "mirror_11", "x1": 443.4, "y1": 750.1, "x2": 539.2, "y2": 873.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_12", "x1": 822.7, "y1": 685.8, "x2": 684.9, "y2": 706.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_13", "x1": 686.7, "y1": 1188.6, "x2": 774.6, "y2": 1284.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_14", "x1": 927.4, "y1": 1456.3, "x2": 743.3, "y2": 1512.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_15", "x1": 595.2, "y1": 1442.7, "x2": 587.1, "y2": 1601.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_16", "x1": 219.9, "y1": 1209.2, "x2": 385.9, "y2": 1229.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_17", "x1": 532.5, "y1": 1416.6, "x2": 636.5, "y2": 1424.3, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_18", "x1": 150.8, "y1": 864.1, "x2": 229.7, "y2": 1029.9, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 223.7, "y1": 885.4, "x2": 349.6, "y2": 1055.9, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 868.8, "y1": 1032.3, "x2": 708.2, "y2": 1041.2, "destructible": false, "hp": 999},
+    {"id": "obstacle_3", "x1": 699.4, "y1": 1283.0, "x2": 662.1, "y2": 1558.8, "destructible": false, "hp": 999},
+    {"id": "obstacle_4", "x1": 544.3, "y1": 685.7, "x2": 679.0, "y2": 756.5, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 399.1, "y": 1129.7, "radius": 30.0},
+    {"id": "prism_2", "x": 827.1, "y": 1154.8, "radius": 30.0}
+  ],
+  "black_holes": [
+    {"id": "blackhole_1", "x": 295.0, "y": 1138.9, "radius": 50.0, "emit_x": 618.2, "emit_y": 1258.6},
+    {"id": "blackhole_2", "x": 320.6, "y": 518.0, "radius": 50.0, "emit_x": 460.0, "emit_y": 918.9}
+  ],
+  "rewards": {"coins": 46, "gems": 1, "xp": 59},
+  "hints": ["سیاه‌چاله پرتو را می‌بلعد و از جای دیگر با زاویه‌ی تصادفی بیرون می‌دهد؛ از آن دوری کن."]
+}

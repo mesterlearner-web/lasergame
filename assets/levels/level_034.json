@@ -1,0 +1,27 @@
+{
+  "level_id": 34,
+  "phase": "advanced",
+  "difficulty": 2.73,
+  "time_limit": 254,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 692.9, "y": 544.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 453.9, "y": 549.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 901.6, "y": 507.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 186.7, "y1": 430.0, "x2": 207.0, "y2": 610.3, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 469.3, "y1": 782.2, "x2": 680.2, "y2": 727.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 557.2, "y1": 795.3, "x2": 606.4, "y2": 946.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 700.9, "y1": 1203.1, "x2": 773.5, "y2": 1444.8, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 350.7, "y": 870.4, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 29, "gems": 0, "xp": 26},
+  "hints": ["منشور پرتو را به چند شاخه‌ی رنگی تقسیم می‌کند."]
+}

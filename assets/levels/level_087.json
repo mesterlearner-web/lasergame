@@ -1,0 +1,37 @@
+{
+  "level_id": 87,
+  "phase": "master",
+  "difficulty": 8.29,
+  "time_limit": 106,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 412.7, "y": 1195.6, "hp": 1, "move_pattern": "linear_horizontal", "speed": 100.0, "radius": 40.0},
+    {"id": "target_2", "x": 798.9, "y": 695.7, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 364.3, "y": 811.6, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 602.7, "y1": 506.4, "x2": 726.2, "y2": 631.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 959.9, "y1": 740.0, "x2": 844.1, "y2": 558.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 778.1, "y1": 1202.8, "x2": 921.4, "y2": 1044.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 246.0, "y1": 531.9, "x2": 219.6, "y2": 739.2, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 255.2, "y1": 913.9, "x2": 430.4, "y2": 980.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 505.3, "y1": 823.2, "x2": 623.8, "y2": 639.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 341.6, "y1": 577.7, "x2": 440.9, "y2": 665.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 888.6, "y1": 1287.6, "x2": 772.6, "y2": 1343.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 466.5, "y1": 1451.9, "x2": 314.4, "y2": 1545.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_10", "x1": 698.7, "y1": 647.0, "x2": 613.2, "y2": 748.8, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 579.1, "y1": 1289.8, "x2": 347.1, "y2": 1398.2, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 702.4, "y1": 1288.9, "x2": 648.2, "y2": 1524.4, "destructible": false, "hp": 999},
+    {"id": "obstacle_3", "x1": 220.3, "y1": 1276.6, "x2": 244.7, "y2": 1435.1, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [
+    {"id": "blackhole_1", "x": 632.2, "y": 1045.3, "radius": 50.0, "emit_x": 830.3, "emit_y": 1012.8},
+    {"id": "blackhole_2", "x": 792.7, "y": 953.9, "radius": 50.0, "emit_x": 717.6, "emit_y": 950.0}
+  ],
+  "rewards": {"coins": 42, "gems": 0, "xp": 53},
+  "hints": ["سیاه‌چاله پرتو را می‌بلعد و از جای دیگر با زاویه‌ی تصادفی بیرون می‌دهد؛ از آن دوری کن."]
+}

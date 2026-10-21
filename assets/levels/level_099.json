@@ -1,0 +1,43 @@
+{
+  "level_id": 99,
+  "phase": "master",
+  "difficulty": 9.86,
+  "time_limit": 64,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 768.8, "y": 521.0, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 177.8, "y": 894.4, "hp": 1, "move_pattern": "zigzag", "speed": 120.0, "radius": 40.0},
+    {"id": "target_3", "x": 434.9, "y": 1085.4, "hp": 1, "move_pattern": "circular", "speed": 150.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 338.4, "y1": 567.0, "x2": 400.5, "y2": 698.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 609.9, "y1": 773.8, "x2": 757.0, "y2": 705.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 908.6, "y1": 623.7, "x2": 869.8, "y2": 472.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 723.9, "y1": 1017.9, "x2": 834.1, "y2": 919.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 372.2, "y1": 991.1, "x2": 567.3, "y2": 1037.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 452.8, "y1": 1593.8, "x2": 573.9, "y2": 1488.6, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_7", "x1": 254.5, "y1": 1322.5, "x2": 253.5, "y2": 1472.4, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_8", "x1": 652.8, "y1": 1378.9, "x2": 810.1, "y2": 1380.1, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_9", "x1": 654.8, "y1": 775.6, "x2": 785.1, "y2": 779.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_10", "x1": 852.9, "y1": 1144.7, "x2": 823.5, "y2": 1291.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_11", "x1": 852.5, "y1": 964.3, "x2": 827.4, "y2": 1095.8, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_12", "x1": 694.8, "y1": 1427.8, "x2": 649.4, "y2": 1542.5, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_13", "x1": 712.4, "y1": 1061.3, "x2": 650.8, "y2": 1238.3, "type": "broken_mirror", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 812.1, "y1": 1348.1, "x2": 927.0, "y2": 1476.2, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 927.3, "y1": 1503.9, "x2": 823.3, "y2": 1573.7, "destructible": false, "hp": 999},
+    {"id": "obstacle_3", "x1": 507.1, "y1": 568.8, "x2": 634.3, "y2": 647.1, "destructible": false, "hp": 999},
+    {"id": "obstacle_4", "x1": 657.4, "y1": 496.0, "x2": 667.4, "y2": 630.8, "destructible": false, "hp": 999}
+  ],
+  "portals": [
+    {"id": "portal_1", "x": 202.1, "y": 490.8, "radius": 35.0, "exit_x": 384.7, "exit_y": 1205.2, "exit_angle": 69.1}
+  ],
+  "prisms": [],
+  "black_holes": [
+    {"id": "blackhole_1", "x": 780.2, "y": 1500.6, "radius": 50.0, "emit_x": 577.0, "emit_y": 1401.6},
+    {"id": "blackhole_2", "x": 762.2, "y": 1230.6, "radius": 50.0, "emit_x": 406.4, "emit_y": 1378.8}
+  ],
+  "rewards": {"coins": 46, "gems": 0, "xp": 59},
+  "hints": ["پورتال: پرتو از یک نقطه وارد می‌شود و از نقطه‌ی دیگر با زاویه‌ی ثابت بیرون می‌آید."]
+}

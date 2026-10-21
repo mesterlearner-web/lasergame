@@ -1,0 +1,28 @@
+{
+  "level_id": 71,
+  "phase": "expert",
+  "difficulty": 6.35,
+  "time_limit": 157,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 426.0, "y": 741.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_2", "x": 823.4, "y": 794.4, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 753.1, "y1": 607.2, "x2": 788.9, "y2": 430.0, "type": "semi_mirror", "reflectivity": 0.5, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 495.8, "y1": 430.0, "x2": 570.5, "y2": 608.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 902.6, "y1": 945.4, "x2": 872.1, "y2": 1105.9, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 261.3, "y1": 929.2, "x2": 249.1, "y2": 1059.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 904.6, "y1": 1107.6, "x2": 849.1, "y2": 1211.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 453.5, "y1": 575.9, "x2": 280.7, "y2": 739.3, "destructible": false, "hp": 999},
+    {"id": "obstacle_2", "x1": 407.5, "y1": 506.5, "x2": 263.6, "y2": 677.6, "destructible": false, "hp": 999},
+    {"id": "obstacle_3", "x1": 694.2, "y1": 1098.8, "x2": 852.5, "y2": 1125.3, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [],
+  "black_holes": [],
+  "rewards": {"coins": 38, "gems": 0, "xp": 45},
+  "hints": ["آینه‌ی نیمه‌شفاف پرتو را دو شاخه می‌کند: بخشی بازتاب می‌شود و بخشی عبور می‌کند."]
+}

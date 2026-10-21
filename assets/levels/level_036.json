@@ -1,0 +1,30 @@
+{
+  "level_id": 36,
+  "phase": "advanced",
+  "difficulty": 2.89,
+  "time_limit": 250,
+  "laser_start": {"x": 540.0, "y": 180.0, "angle": 90},
+  "targets": [
+    {"id": "target_1", "x": 380.4, "y": 693.9, "hp": 1, "move_pattern": "circular", "speed": 150.0, "radius": 40.0},
+    {"id": "target_2", "x": 725.5, "y": 1001.5, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0},
+    {"id": "target_3", "x": 792.8, "y": 883.2, "hp": 1, "move_pattern": "static", "speed": 0.0, "radius": 40.0}
+  ],
+  "mirrors": [
+    {"id": "mirror_1", "x1": 743.7, "y1": 663.0, "x2": 762.6, "y2": 452.4, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_2", "x1": 188.7, "y1": 430.0, "x2": 152.3, "y2": 551.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_3", "x1": 234.9, "y1": 951.6, "x2": 417.6, "y2": 1082.7, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_4", "x1": 929.9, "y1": 575.4, "x2": 888.4, "y2": 430.0, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_5", "x1": 521.2, "y1": 1348.6, "x2": 565.2, "y2": 1489.3, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0},
+    {"id": "mirror_6", "x1": 380.6, "y1": 1220.4, "x2": 264.7, "y2": 1291.5, "type": "normal", "reflectivity": 1.0, "rotation_speed": 0.0}
+  ],
+  "obstacles": [
+    {"id": "obstacle_1", "x1": 738.0, "y1": 1271.6, "x2": 555.0, "y2": 1337.1, "destructible": false, "hp": 999}
+  ],
+  "portals": [],
+  "prisms": [
+    {"id": "prism_1", "x": 883.6, "y": 1314.6, "radius": 30.0}
+  ],
+  "black_holes": [],
+  "rewards": {"coins": 30, "gems": 0, "xp": 27},
+  "hints": ["منشور پرتو را به چند شاخه‌ی رنگی تقسیم می‌کند."]
+}
